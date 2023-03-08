@@ -274,9 +274,8 @@ i.fa-brands {
   grid-template-columns: 30% 65%;
   grid-gap: 40px;
 }
-.about-info {
+p {
   color: #fff;
-
   font-size: 20px;
   line-height: 40px;
 }
@@ -336,15 +335,15 @@ b {
 }
 .education-section {
   background: transparent;
-  width: 540px;
-  height: 500px;
+  width: 100%;
+  height: 100vh;
   margin: 0 auto;
   position: relative;
   margin-top: 10%;
   /* box-shadow: 2px 5px 20px rgba(119, 119, 119, 0.5); */
 }
 .ed-container {
-  margin-left: 300px;
+  /* margin-left: 300px; */
   /* box-shadow: 2px 5px 20px rgba(119, 119, 119, 0.5); */
 }
 .ed-hero {
@@ -418,4 +417,146 @@ ul.rb li .timestamp {
 
 .item-title {
   color: #fff;
+}
+@media only screen and (max-width: 400px) {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    width: 100%;
+    height: 100vh;
+    max-width: 1400px;
+    background-attachment: fixed;
+  }
+  .nav {
+    margin: 20px 10px;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .project-section {
+    width: 100%;
+  }
+  .hero {
+  }
+  .project-heading {
+    margin-left: -30px;
+    padding: 10px;
+    font-size: 60px;
+  }
+  .project-container {
+    display: grid;
+    grid-template-columns: repeat(1, 400px);
+  }
+  .project-card {
+    margin: 0px 30px 0px 60px;
+  }
+  .social-connect {
+    /* margin: ; */
+    min-width: 200px;
+    margin: 0px auto;
+    padding: 30px 20px;
+  }
+  .content {
+    font-size: 17px;
+  }
+  .social-container {
+    padding: 0px;
+  }
+  .about-section {
+    width: 100%;
+  }
+  .about-heading {
+    font-size: 60px;
+  }
+  .about {
+    display: grid;
+    grid-template-columns: repeat(1, 350px);
+  }
+  .about-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-img-container img {
+    margin: 0px 180px 0px 0px;
+    padding: 30px;
+    padding-right: 40px;
+  }
+  .downloadCv-btn {
+    margin-left: 100px;
+  }
+  .about-info {
+    max-width: 280px;
+    display: inline-block;
+    text-align: left;
+    align-items: center;
+    font-size: 18px;
+    margin-left: -50px;
+    line-height: 30px;
+  }
+  .skill-section {
+    width: 100%;
+    max-width: 400px;
+  }
+  .skill-heading {
+    font-size: 60px;
+    padding: 30px;
+  }
+  .img-container {
+    display: grid;
+    grid-template-columns: repeat(5, 50px);
+  }
+  .img-container img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .education-section {
+    background: transparent;
+    width: 100%;
+    /* min-width: 300px; */
+    max-width: 350px;
+    height: 100vh;
+    position: relative;
+    margin-top: 10%;
+    /* box-shadow: 2px 5px 20px rgba(119, 119, 119, 0.5); */
+  }
+
+  .ed-hero {
+    font-size: 40px;
+  }
+  .ed-container {
+    min-width: -100px;
+    max-width: 350px;
+    margin-left: 200px;
+  }
+  .rightbox {
+    min-width: 20px;
+    margin: auto;
+    padding: 10px;
+    height: 100%;
+  }
+  .rb-container {
+    width: 50%;
+    margin: 0px;
+  }
+  .rb-container ul.rb li::before {
+    left: -18px;
+    top: -5px;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: transparent;
+    float: right;
+    margin-right: 10px;
+    margin-top: 50px;
+    margin-left: 40px;
+  }
 }
